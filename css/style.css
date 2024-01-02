@@ -1,0 +1,816 @@
+@charset "UTF-8";
+@import url(normalizez.css);
+@import url(resets.css);
+/* line 4, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'MontserratT';
+  src: url('../fonts/Montserrat-Regular.ttf');
+  font-weight: regular;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'MontserratT';
+  src: url('../fonts/Montserrat-SemiBold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* line 21, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+html {
+  font-family: 'MontserratT';
+  font-weight: regular;
+}
+
+/* line 30, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.container {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* line 34, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.main-section {
+  position: relative;
+  min-height: 800px;
+  background: #f0f0f0;
+  padding-top: 16px;
+  overflow: hidden;
+}
+
+/* line 40, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.main-section__nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 69px;
+  align-items: center;
+}
+
+/* line 46, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.main-section__logo {
+  width: 134px;
+}
+
+/* line 48, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.main-section__content-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+/* line 52, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.main-section__first-elipse {
+  position: absolute;
+  top: 129px;
+  right: 75px;
+}
+
+/* line 56, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.main-section__second-elipse {
+  position: absolute;
+  right: -120px;
+  top: 650px;
+}
+
+/* line 62, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.nav-menu__list {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 65, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.nav-menu__list-item {
+  margin-right: 64px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* line 69, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.nav-menu__list-item:last-child {
+  margin-right: 0px;
+}
+
+/* line 71, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.nav-menu__list-item a {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 75, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.left-wrapper {
+  position: relative;
+}
+
+/* line 77, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.left-wrapper img {
+  position: relative;
+  z-index: 5;
+}
+
+/* line 80, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.left-wrapper__rectangle-blue {
+  position: absolute;
+  top: 150px;
+  left: -50px;
+  width: 565.95px;
+  height: 220px;
+  background: #5290ea;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transform: rotate(-64.003deg);
+  z-index: 2;
+}
+
+/* line 91, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.left-wrapper__rectangle-orange {
+  position: absolute;
+  top: 160px;
+  left: -30px;
+  width: 618.428px;
+  height: 220px;
+  background: #f28b64;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transform: rotate(-50.806deg);
+  z-index: 3;
+}
+
+/* line 102, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.left-wrapper__rectangle-grey {
+  position: absolute;
+  top: 190px;
+  left: 10px;
+  width: 608.968px;
+  height: 220px;
+  background: #e2e2e2;
+  border-radius: 100px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transform: rotate(-36.15deg);
+  z-index: 1;
+}
+
+/* line 114, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.right-wrapper {
+  width: 372px;
+  position: absolute;
+  top: 150px;
+  right: 76px;
+  z-index: 1;
+}
+
+/* line 120, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.right-wrapper__icons-box {
+  margin-bottom: 1px;
+  margin-left: 10px;
+}
+
+/* line 123, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.right-wrapper__title {
+  margin-bottom: 5px;
+}
+
+/* line 125, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.right-wrapper__text {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* line 129, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.icons {
+  display: inline-flex;
+}
+
+/* line 131, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.icons__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #5290ea;
+  border-radius: 100px;
+  margin-right: 17px;
+  font-size: 21px;
+}
+
+/* line 141, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.icons:last-child {
+  margin-right: 0;
+  border: none;
+}
+
+/* line 147, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.title {
+  font-size: 72px;
+  position: relative;
+  font-weight: bold;
+}
+
+/* line 151, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.title__hr {
+  width: 65px;
+  position: absolute;
+  margin: 0;
+  color: #000000;
+}
+
+/* line 157, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.butons {
+  display: inline-flex;
+}
+
+/* line 159, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.butons__main-btn {
+  font-size: 18px;
+  margin-right: 32px;
+  width: 200px;
+  height: 60px;
+  border-radius: 100px;
+  background: #f28b64;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* line 170, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.butons__icon-btn {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* line 173, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.butons img {
+  margin-right: 12px;
+}
+
+/* line 175, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.butons__text {
+  font-size: 16px;
+}
+
+/* line 178, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.elipse {
+  width: 194px;
+  height: 194px;
+  background: linear-gradient(
+    144deg,
+    rgba(237, 123, 80, 0.5) 0%,
+    rgba(72, 138, 234, 0.5) 54.17%,
+    rgba(44, 44, 44, 0.5) 100%
+  );
+  border-radius: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 186, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.elipse_big {
+  width: 282px;
+  height: 282px;
+}
+
+/* line 189, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.elipse__subtract {
+  width: 129.33px;
+  height: 129.33px;
+  background: #f0f0f0;
+  border-radius: 150px;
+}
+
+/* line 194, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.elipse__subtract_big {
+  width: 188px;
+  height: 188px;
+}
+
+/* line 199, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.second-section {
+  min-height: 700px;
+  overflow: hidden;
+  padding-top: 32px;
+  position: relative;
+}
+
+/* line 205, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.second-section__title {
+  margin-bottom: 40px;
+}
+
+/* line 207, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.second-section__card-box {
+  display: inline-flex;
+  margin-bottom: 38px;
+  justify-content: center;
+}
+
+/* line 211, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.second-section__cards-item {
+  margin-right: 30px;
+}
+
+/* line 213, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.second-section__cards-item:last-child {
+  margin-right: 0;
+}
+
+/* line 216, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.second-section__icons-item:last-child {
+  margin-right: 0;
+}
+
+/* line 218, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.second-section__icons-box {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* line 221, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.second-section__first-elipse {
+  position: absolute;
+  top: 80px;
+  right: 116px;
+  z-index: -1;
+}
+
+/* line 226, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.second-section__second-elipse {
+  position: absolute;
+  top: 364px;
+  left: 115px;
+  z-index: -1;
+}
+
+/* line 232, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.cards-item {
+  width: 360px;
+  height: 360px;
+  background-color: #e2e2e2;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+/* line 240, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.cards-item__img {
+  height: 335px;
+}
+
+/* line 242, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.cards-item__text {
+  width: 280px;
+  font-size: 36px;
+  text-align: center;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 144px;
+  right: -45px;
+  font-weight: bold;
+}
+
+/* line 252, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.cards-item_orange {
+  background: #f28b64;
+}
+
+/* line 255, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.cards-item_blue {
+  background: #5290ea;
+}
+
+/* line 258, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.icons-item {
+  display: inline-flex;
+}
+
+/* line 260, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.icons-item__img {
+  margin-right: 20px;
+  width: 80px;
+}
+
+/* line 263, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.icons-item__text {
+  font-size: 18px;
+}
+
+/* line 266, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.icons-item span {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+/* line 270, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.third-section {
+  position: relative;
+  min-height: 640px;
+  background: #e2e2e2;
+  z-index: 0;
+  overflow: hidden;
+}
+
+/* line 276, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.third-section__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 167px;
+  justify-content: space-between;
+  padding-top: 46px;
+}
+
+/* line 283, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.third-section__right-wraper {
+  max-width: 480px;
+}
+
+/* line 285, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.third-section__right-title {
+  margin-bottom: 20px;
+}
+
+/* line 287, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.third-section__text {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+/* line 290, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.third-section__first-elipse {
+  position: absolute;
+  z-index: -1;
+  top: 140px;
+  left: 110px;
+}
+
+/* line 295, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.third-section__figure {
+  position: absolute;
+  top: 249px;
+  left: 15px;
+}
+
+/* line 299, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.third-section__second-elipse {
+  position: absolute;
+  right: -120px;
+  top: -120px;
+}
+
+/* line 304, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.third-section .title__hr_top {
+  bottom: 75px;
+}
+
+/* line 308, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.footer__img {
+  position: absolute;
+  left: -250px;
+  bottom: 0;
+}
+
+/* line 312, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+.footer__container {
+  min-height: 272px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1199px) {
+  /* line 319, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .container {
+    width: 960px;
+  }
+  /* line 321, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .main-section {
+    min-height: 690px;
+  }
+  /* line 324, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .left-wrapper img {
+    width: 750px;
+  }
+  /* line 326, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .left-wrapper__rectangle-blue {
+    width: 500px;
+    height: 200px;
+  }
+  /* line 329, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .left-wrapper__rectangle-orange {
+    width: 550px;
+    height: 200px;
+  }
+  /* line 332, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .left-wrapper__rectangle-grey {
+    width: 500px;
+    height: 200px;
+  }
+  /* line 335, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .right-wrapper {
+    right: 20px;
+  }
+  /* line 337, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .main-section__first-elipse {
+    right: 10px;
+  }
+  /* line 339, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .main-section__second-elipse {
+    top: 560px;
+  }
+  /* line 341, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .second-section {
+    min-height: 600px;
+  }
+  /* line 343, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .second-section__first-elipse {
+    top: 16px;
+    right: -69px;
+  }
+  /* line 346, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .second-section__card-box {
+    display: flex;
+    justify-content: center;
+  }
+  /* line 349, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .cards-item {
+    width: 300px;
+    height: 300px;
+    margin-right: 20px;
+  }
+  /* line 353, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .cards-item__img {
+    height: 280px;
+  }
+  /* line 355, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .cards-item__text {
+    font-size: 30px;
+    top: 120px;
+  }
+  /* line 358, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .icons-item__img {
+    margin-right: 10px;
+  }
+  /* line 360, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .third-section__container {
+    padding-left: 40px;
+  }
+  /* line 362, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .third-section__right-wraper {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 367, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .main-section {
+    min-height: 530px;
+  }
+  /* line 369, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .main-section__first-elipse {
+    top: 70px;
+  }
+  /* line 371, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .main-section__second-elipse {
+    top: 400px;
+  }
+  /* line 373, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .container {
+    width: 720px;
+  }
+  /* line 376, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .left-wrapper img {
+    width: 550px;
+  }
+  /* line 378, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .left-wrapper__rectangle-blue {
+    width: 380px;
+    height: 130px;
+  }
+  /* line 381, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .left-wrapper__rectangle-orange {
+    width: 410px;
+    height: 130px;
+  }
+  /* line 384, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .left-wrapper__rectangle-grey {
+    width: 380px;
+    height: 130px;
+  }
+  /* line 387, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .title {
+    font-size: 60px;
+  }
+  /* line 389, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .right-wrapper {
+    top: 75px;
+    width: 300px;
+  }
+  /* line 392, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .right-wrapper__text {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  /* line 396, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .butons__main-btn {
+    font-size: 14px;
+    margin-right: 10px;
+    width: 160px;
+    height: 50px;
+  }
+  /* line 401, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .butons__icon-btn {
+    font-size: 14px;
+  }
+  /* line 403, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .elipse {
+    width: 150px;
+    height: 150px;
+  }
+  /* line 406, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .elipse__subtract {
+    width: 110px;
+    height: 110px;
+  }
+  /* line 409, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .elipse__subtract_big {
+    width: 170px;
+    height: 170px;
+  }
+  /* line 413, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .second-section {
+    min-height: 450px;
+  }
+  /* line 415, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .second-section__card-box {
+    margin-bottom: 10px;
+  }
+  /* line 417, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .second-section__first-elipse {
+    top: 30px;
+    right: -50px;
+  }
+  /* line 420, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .second-section__second-elipse {
+    top: 332px;
+    left: -6px;
+  }
+  /* line 423, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .second-section__title {
+    margin-bottom: 15px;
+  }
+  /* line 425, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .cards-item {
+    width: 220px;
+    height: 220px;
+  }
+  /* line 428, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .cards-item__img {
+    height: 200px;
+  }
+  /* line 430, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .cards-item__text {
+    font-size: 22px;
+    top: 92px;
+    right: -75px;
+  }
+  /* line 435, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .icons-item__img {
+    width: 50px;
+  }
+  /* line 437, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .icons-item__text {
+    font-size: 14px;
+  }
+  /* line 439, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .icons-item span {
+    font-size: 30px;
+  }
+  /* line 442, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .elipse_big {
+    width: 250px;
+    height: 250px;
+  }
+  /* line 446, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .third-section {
+    min-height: 510px;
+  }
+  /* line 448, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .third-section__left-title {
+    display: none;
+  }
+  /* line 450, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .third-section__right-wraper {
+    max-width: 648px;
+  }
+  /* line 452, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .third-section__container {
+    justify-content: flex-start;
+  }
+  /* line 454, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .third-section__container__right-title {
+    margin-bottom: 10px;
+  }
+  /* line 458, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .title__hr_top {
+    bottom: 60px;
+  }
+  /* line 461, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .footer__img {
+    max-width: 500px;
+  }
+  /* line 463, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .footer__container {
+    min-height: 201px;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 468, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .container {
+    width: 540px;
+  }
+  /* line 470, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 50%;
+    background: #5290ea;
+    z-index: 20;
+    transition: 0.6s all;
+  }
+  /* line 479, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .nav-menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    align-items: center;
+  }
+  /* line 485, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .nav-menu__list-item {
+    margin-right: 0;
+    font-size: 20px;
+  }
+  /* line 488, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .hamburger {
+    width: 30px;
+    position: fixed;
+    top: 40px;
+    right: 30px;
+    height: 14px;
+    z-index: 30;
+  }
+  /* line 495, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .hamburger span {
+    height: 2px;
+    width: 100%;
+    display: block;
+    background: black;
+    margin-bottom: 4px;
+    transition: 1s all;
+  }
+  /* line 502, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .hamburger span:last-child {
+    margin-bottom: 0;
+  }
+  /* line 505, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 507, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 509, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 511, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 513, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .nav-menu_active {
+    right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 517, ../../../../../Desktop/Курс от ДИМЫ/Project-2/src/sass/style.sass */
+  .container {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
